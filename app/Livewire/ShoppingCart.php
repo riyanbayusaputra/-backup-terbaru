@@ -51,7 +51,7 @@ class ShoppingCart extends Component
 
         $this->loadCarts();
         $this->dispatch('showAlert', [
-            'message' => 'Quantity updated',
+            'message' => 'keranjang belanja diperbarui',
             'type' => 'success'
         ]);
     }
@@ -70,7 +70,7 @@ class ShoppingCart extends Component
 
         $this->loadCarts();
         $this->dispatch('showAlert', [
-            'message' => 'Quantity updated',
+            'message' => 'keranjang belanja diperbarui',
             'type' => 'success'
         ]);
     }
@@ -89,7 +89,7 @@ class ShoppingCart extends Component
     foreach ($this->carts as $cart) {
         if ($cart->quantity < 5) {
             $this->dispatch('showAlert', [
-                'message' => 'Minimal pemesanan adalah 5 item ',
+                'message' => 'Minimal pemesanan adalah 10',
                 'type' => 'error'
             ]);
             return; // stop checkout

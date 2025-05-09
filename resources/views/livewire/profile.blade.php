@@ -13,13 +13,13 @@
     <div class="pt-16">
         <!-- Profile Header -->
         <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 rounded-b-3xl shadow-md">
-            <div class="flex items-center gap-4">
-                <div class="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center">
-                    <i class="bi bi-person text-4xl text-white"></i>
+            <div class="flex flex-col items-center gap-4 text-center">
+                <div class="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center">
+                    <i class="bi bi-person text-5xl text-white"></i>
                 </div>
                 <div class="text-white">
                     <h2 class="text-xl font-semibold">{{$name}}</h2>
-                    <p class="text-white/80">{{$email}}</p>
+                    <p class="text-white/80 text-sm">{{$email}}</p>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <a href="https://wa.me/{{$whatsapp}}" target="_blank" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl shadow-md hover:bg-gray-100 transition">
                 <div class="flex items-center gap-3">
                     <i class="bi bi-whatsapp text-green-500 text-xl"></i>
-                    <span class="text-gray-700 font-medium">Hubungi Bintang Catering via WhatsApp</span>
+                    <span class="text-gray-700 font-medium text-sm">Hubungi Bintang Catering via WhatsApp</span>
                 </div>
                 <i class="bi bi-chevron-right text-gray-400"></i>
             </a>

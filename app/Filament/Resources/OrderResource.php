@@ -88,7 +88,7 @@ class OrderResource extends Resource
                                     ->label('Tanggal')
                                     ->disabled(),
                                 Forms\Components\TextInput::make('delivery_time')
-                                    ->label('Waktu')
+                                    ->label('Waktu pemakaian/pengiriman')
                                     ->disabled(),
                             ]),
 
@@ -239,11 +239,11 @@ class OrderResource extends Resource
             ])
             ->filters([
                 //
-                Tables\Filters\TernaryFilter::make('is_custom_catering')
-                    ->label('Custom Catering')
-                    ->placeholder('Semua Pesanan')
-                    ->trueLabel('Hanya Custom Catering')
-                    ->falseLabel('Tanpa Custom Catering'),
+                // Tables\Filters\TernaryFilter::make('is_custom_catering')
+                //     ->label('Custom Catering')
+                //     ->placeholder('Semua Pesanan')
+                //     ->trueLabel('Hanya Custom Catering')
+                //     ->falseLabel('Tanpa Custom Catering'),
 
             ])
             ->actions([
@@ -257,7 +257,9 @@ class OrderResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->defaultSort('created_at', 'desc');
+            
     }
 
     public static function getRelations(): array

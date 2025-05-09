@@ -64,9 +64,9 @@ class Checkout extends Component
 
     public function mount()
     {
-        if (!auth()->user()?->hasVerifiedEmail()) {
-            return redirect()->route('verification.notice');
-        }
+        // if (!auth()->user()?->hasVerifiedEmail()) {
+        //     return redirect()->route('verification.notice');
+        // }
         $this->loadCarts();
         if ($this->carts->isEmpty()) {
             return redirect()->route('home');

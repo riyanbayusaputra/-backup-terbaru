@@ -6,7 +6,7 @@
                         <button onclick="history.back()" class="p-2 hover:bg-gray-50 rounded-full">
                             <i class="bi bi-arrow-left text-xl"></i>
                         </button>
-                        <h1 class="ml-2 text-lg font-medium">Detail Produk</h1>
+                        <h1 class="ml-2 text-lg font-medium">Detail Menu</h1>
                 </div>
 
                 <a href="{{route('shopping-cart')}}" class="relative p-2">
@@ -67,7 +67,7 @@
 
             <!-- Product Description -->
             <div class="p-4 border-b border-gray-100">
-                <h3 class="text-lg font-semibold mb-3">Deskripsi Produk</h3>
+                <h3 class="text-lg font-semibold mb-3">Deskripsi Menu</h3>
                 <div class="space-y-2 text-gray-600 text-sm">
                     {!! $product->description !!}
                 </div>
